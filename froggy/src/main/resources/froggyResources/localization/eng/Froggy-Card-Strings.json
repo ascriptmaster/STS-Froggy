@@ -1,0 +1,53 @@
+{
+  "froggy:DefaultCommonAttack": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
+  },
+  "froggy:DefaultCommonSkill": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block. NL froggy:Multiword_Keyword."
+  },
+  "froggy:DefaultCommonPower": {
+    "NAME": "Hold Place",
+    "DESCRIPTION": "Gain !M! froggy:Keyword.",
+    "UPGRADE_DESCRIPTION": "Gain !M! froggy:Keywords."
+  },
+  "froggy:DefaultUncommonAttack": {
+    "NAME": "Big slap",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "froggy:DefaultUncommonSkill": {
+    "NAME": "A Better Defend",
+    "DESCRIPTION": "Gain !B! Plated Armor. Affected by Dexterity."
+  },
+  "froggy:DefaultUncommonPower": {
+    "NAME": "Weirdness",
+    "DESCRIPTION": "Gain X froggy:Keywords.",
+    "UPGRADE_DESCRIPTION": "Gain X +1 froggy:Keywords."
+  },
+  "froggy:DefaultRareAttack": {
+    "NAME": "TOUCH",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "froggy:DefaultRareSkill": {
+    "NAME": "For Each Loop x2",
+    "DESCRIPTION": "Apply !M! Vulnerable to all enemies, 2 times.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to all enemies, 3 times."
+  },
+  "froggy:DefaultRarePower": {
+    "NAME": "In-Progress Form",
+    "DESCRIPTION": "At the start of your turn, play a TOUCH."
+  },
+  "froggy:DefaultAttackWithVariable": {
+    "NAME": "Special Strike",
+    "DESCRIPTION": "Deal !D! damage [E] times. NL (Deal !froggy:ENERGY_DAMAGE! damage total.)"
+  },
+  "froggy:DefaultSecondMagicNumberSkill": {
+    "NAME": "Cool 2 Number Card",
+    "DESCRIPTION": "Apply !M! Vulnerable and !froggy:SecondMagic! poison to an enemy."
+  },
+  "froggy:OrbSkill": {
+    "NAME": "Get Orb",
+    "DESCRIPTION": "Channel 1 Default Orb."
+  }
+}
