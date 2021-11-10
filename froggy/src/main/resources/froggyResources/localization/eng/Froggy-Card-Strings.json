@@ -49,5 +49,9 @@
   "froggy:OrbSkill": {
     "NAME": "Get Orb",
     "DESCRIPTION": "Channel 1 Default Orb."
+  },
+  "froggy:Toxicity": {
+    "NAME": "Toxicity",
+    "DESCRIPTION": "Each time you are attacked, apply !M! Poison back."
   }
 }

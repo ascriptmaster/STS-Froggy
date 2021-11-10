@@ -6,5 +6,9 @@
 "froggy:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
-}
+},
+        "froggy:ToxicityPower": {
+                "NAME": "Toxicity",
+                "DESCRIPTIONS": ["When attacked, apply #b", " #yPoison back."]
+        }
 }
