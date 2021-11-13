@@ -1,14 +1,18 @@
 {
-"froggy:CommonPower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
-},
-"froggy:RarePower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
-},
+        "froggy:CommonPower": {
+                "NAME": "Placeholder Power",
+                "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
+        },
+        "froggy:RarePower": {
+                "NAME": "Placeholder Power",
+                "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
+        },
         "froggy:ToxicityPower": {
                 "NAME": "Toxicity",
                 "DESCRIPTIONS": ["When attacked, apply #b", " #yPoison back."]
+        },
+        "froggy:SuspendPower": {
+                "NAME": "Suspension",
+                "DESCRIPTIONS": ["At the end of this turn, play ", "At the start of your next turn, play ", "In #b", " turns, play ", "."]
         }
 }

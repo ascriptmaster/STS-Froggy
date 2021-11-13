@@ -1,0 +1,6 @@
+{
+  "froggy:SuspendFroggy": {
+    "NAME": "Froggy",
+    "MOVES": ["Suspend a Card"]
+  }
+}

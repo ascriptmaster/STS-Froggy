@@ -53,5 +53,9 @@
   "froggy:Toxicity": {
     "NAME": "Toxicity",
     "DESCRIPTION": "Each time you are attacked, apply !M! Poison back."
+  },
+  "froggy:FroggyStrike": {
+    "NAME": "Froggy Strike!!",
+    "DESCRIPTION": "Deal !D! damage. NL For every 4 unblocked damage, summon froggy:Froggy."
   }
 }

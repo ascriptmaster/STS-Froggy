@@ -488,6 +488,14 @@ public class FroggyMod implements
         // OrbStrings
         BaseMod.loadCustomStringsFile(OrbStrings.class,
                 getModID() + "Resources/localization/eng/Froggy-Orb-Strings.json");
+
+        // MonsterStrings
+        BaseMod.loadCustomStringsFile(MonsterStrings.class,
+                getModID() + "Resources/localization/eng/Froggy-Monster-Strings.json");
+
+        // UIStrings
+        BaseMod.loadCustomStringsFile(UIStrings.class,
+                getModID() + "Resources/localization/eng/Froggy-UI-Strings.json");
         
         logger.info("Done edittting strings");
     }
