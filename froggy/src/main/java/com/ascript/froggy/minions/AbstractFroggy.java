@@ -1,5 +1,6 @@
 package com.ascript.froggy.minions;
 
+import com.ascript.froggy.util.MinionUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -21,12 +22,7 @@ public abstract class AbstractFroggy extends AbstractFriendlyMonster {
 
     private static int nextIndex() {
         AbstractPlayer player = AbstractDungeon.player;
-        MonsterGroup minions;
-        if (player instanceof AbstractPlayerWithMinions) {
-            minions = ((AbstractPlayerWithMinions)player).getMinions();
-        } else {
-            minions = BasePlayerMinionHelper.getMinions(player);
-        }
+        MonsterGroup minions = MinionUtils.playerMinions();
 
         Set<Integer> usedIndices = new HashSet<>();
         for (AbstractMonster m : minions.monsters) {
