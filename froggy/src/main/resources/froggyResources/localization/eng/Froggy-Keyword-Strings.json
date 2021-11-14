@@ -18,7 +18,8 @@
     "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
   },
   {
-    "NAMES": ["Froggy", "Froggies"],
+    "PROPER_NAME": "Froggy",
+    "NAMES": ["froggy", "froggies"],
     "DESCRIPTION": "Froggy holds a card for you and plays it after turns equal to its cost have passed."
   }
 ]
