@@ -5,6 +5,7 @@ import basemod.eventUtil.AddEventParams;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.ascript.froggy.cards.AbstractDefaultCard;
+import com.ascript.froggy.cards.Wednesday;
 import com.ascript.froggy.characters.Froggy;
 import com.ascript.froggy.events.IdentityCrisisEvent;
 import com.ascript.froggy.potions.PlaceholderPotion;
@@ -70,6 +71,7 @@ import java.util.Properties;
 
 @SpireInitializer
 public class FroggyMod implements
+        AddAudioSubscriber,
         EditCardsSubscriber,
         EditRelicsSubscriber,
         EditStringsSubscriber,
@@ -212,7 +214,6 @@ public class FroggyMod implements
                 ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
         
         logger.info("Done creating the color");
-        
         
         logger.info("Adding mod settings");
         // This loads the mod settings.
@@ -526,8 +527,16 @@ public class FroggyMod implements
         }
     }
     
-    // ================ /LOAD THE KEYWORDS/ ===================    
-    
+    // ================ /LOAD THE KEYWORDS/ ===================
+
+
+    @Override
+    public void receiveAddAudio() {
+        logger.info("Adding audio");
+        BaseMod.addAudio(Wednesday.ID, "froggyResources/sound/Wednesday.mp3");
+        logger.info("Done adding audio");
+    }
+
     // this adds "ModName:" before the ID of any card/relic/power etc.
     // in order to avoid conflicts if any other mod uses the same ID.
     public static String makeID(String idText) {

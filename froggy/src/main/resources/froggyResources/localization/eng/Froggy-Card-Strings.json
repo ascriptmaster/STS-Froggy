@@ -57,5 +57,25 @@
   "froggy:FroggyStrike": {
     "NAME": "Froggy Strike!!",
     "DESCRIPTION": "Deal !D! damage. NL For every 4 unblocked damage, summon froggy:Froggy."
+  },
+  "froggy:Froghemoth": {
+    "NAME": "Froghemoth",
+    "DESCRIPTION": "Deal !D! damage. NL Increase this card's damage by !M! this combat."
+  },
+  "froggy:Wednesday": {
+    "NAME": "It is Wednesday",
+    "DESCRIPTION": "Deal !D! damage for each card you have #ySuspended."
+  },
+  "froggy:CrazyFrog": {
+    "NAME": "Crazy Frog",
+    "DESCRIPTION": "Summon froggy:Froggy to hold the top card of your draw pile."
+  },
+  "froggy:AcidSpray": {
+    "NAME": "Acid Spray",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+  },
+  "froggy:GunkShot": {
+    "NAME": "Gunk Shot",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak and Vulnerable."
   }
 }

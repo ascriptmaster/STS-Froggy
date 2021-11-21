@@ -21,7 +21,6 @@ public abstract class AbstractFroggy extends AbstractFriendlyMonster {
     }
 
     private static int nextIndex() {
-        AbstractPlayer player = AbstractDungeon.player;
         MonsterGroup minions = MinionUtils.playerMinions();
 
         Set<Integer> usedIndices = new HashSet<>();
@@ -43,6 +42,6 @@ public abstract class AbstractFroggy extends AbstractFriendlyMonster {
     }
 
     private static float getOffsetY() {
-        return 200f * nextIndex();
+        return 200f * (nextIndex() % 2);
     }
 }

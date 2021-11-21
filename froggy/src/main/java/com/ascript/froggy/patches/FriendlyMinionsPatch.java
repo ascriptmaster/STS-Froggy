@@ -13,7 +13,8 @@ import kobting.friendlyminions.patches.MonsterSetMovePatch;
 @SpirePatch(
         clz = MonsterSetMovePatch.class,
         method = "maybeChangeIntent",
-        paramtypez = {AbstractMonster.class, AbstractMonster.Intent.class, byte.class, int.class, int.class, boolean.class}
+        paramtypez = {AbstractMonster.class, AbstractMonster.Intent.class, byte.class, int.class, int.class, boolean.class},
+        requiredModId = "Friendly_Minions_0987678"
 )
 public class FriendlyMinionsPatch {
     @SpirePrefixPatch
