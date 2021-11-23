@@ -44,8 +44,7 @@ public class Wednesday extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        MonsterGroup minions = MinionUtils.playerMinions();
-        long suspended = minions.monsters.stream().filter(mn -> mn.hasPower(SuspendPower.POWER_ID)).count();
+        long suspended = MinionUtils.suspendCount();
         for (int i = 0; i < suspended; i++) {
             addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         }
