@@ -14,5 +14,9 @@
         "froggy:SuspendPower": {
                 "NAME": "Suspension",
                 "DESCRIPTIONS": ["At the end of this turn, play ", "At the start of your next turn, play ", "In #b", " turns, play ", "."]
+        },
+        "froggy:FrogCryonicsPower": {
+                "NAME": "Frog Cryonics",
+                "DESCRIPTIONS": ["When a #ySuspended card is played, gain #b", " #yBlock."]
         }
 }

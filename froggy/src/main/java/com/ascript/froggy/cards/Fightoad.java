@@ -22,7 +22,7 @@ public class Fightoad extends AbstractDynamicCard {
     public static final CardColor COLOR = Froggy.Enums.FROGGY_GREEN;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 7;
+    private static final int DAMAGE = 9;
     private static final int UPGRADE_PLUS_DMG = 3;
     private static final int MAGIC = 1;
 

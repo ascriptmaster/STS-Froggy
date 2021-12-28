@@ -4,8 +4,9 @@ import basemod.helpers.CardModifierManager;
 import basemod.interfaces.CloneablePowerInterface;
 import com.ascript.froggy.FroggyMod;
 import com.ascript.froggy.cards.mods.SetXMod;
+import com.ascript.froggy.cards.mods.SuspendMod;
+import com.ascript.froggy.interfaces.SuspendSubscriber;
 import com.ascript.froggy.minions.SuspendFroggy;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.InstantKillAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -13,7 +14,6 @@ import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
 import com.megacrit.cardcrawl.actions.utility.UnlimboAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
@@ -70,7 +70,7 @@ public class SuspendPower extends AbstractPower implements CloneablePowerInterfa
     }
 
     @Override
-    public void atStartOfTurn() {
+    public void atStartOfTurnPostDraw() {
         if (amount > 1) {
             addToBot(new ReducePowerAction(owner, owner, this, 1));
         } else {
@@ -97,11 +97,17 @@ public class SuspendPower extends AbstractPower implements CloneablePowerInterfa
         card.lighten(false);
         card.drawScale = 0.12F;
         card.targetDrawScale = 0.75F;
+        CardModifierManager.addModifier(card, new SuspendMod());
         card.applyPowers();
         addToBot(new WaitAction(Settings.FAST_MODE ? Settings.ACTION_DUR_FASTER : Settings.ACTION_DUR_MED));
         addToBot(new UnlimboAction(card));
         addToBot(new NewQueueCardAction(card, true, false, true));
         addToBot(new RemoveSpecificPowerAction(owner, owner, this));
+        for (AbstractPower power : AbstractDungeon.player.powers) {
+            if (power instanceof SuspendSubscriber) {
+                ((SuspendSubscriber)power).onPlaySuspended(owner, card);
+            }
+        }
     }
 
     @Override

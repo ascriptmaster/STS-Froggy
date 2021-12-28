@@ -77,5 +77,33 @@
   "froggy:GunkShot": {
     "NAME": "Gunk Shot",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak and Vulnerable."
+  },
+  "froggy:Fightoad": {
+    "NAME": "Fightoad",
+    "DESCRIPTION": "Deal !D! damage. NL If you have any #ySuspended cards, draw !M! card."
+  },
+  "froggy:FrogCall": {
+    "NAME": "Froggy Call",
+    "DESCRIPTION": "If you have no froggy:Froggies, summon a froggy:Froggy. NL Otherwise, draw 1 card."
+  },
+  "froggy:Frogger": {
+    "NAME": "Frogger",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "froggy:FrogCryonics": {
+    "NAME": "Frog Cryonics",
+    "DESCRIPTION": "Each time you play a suspended card, gain !M! block."
+  },
+  "froggy:AmphibianAngel": {
+    "NAME": "Amphibian Angel",
+    "DESCRIPTION": "Gain !B! Block. NL Summon a froggy:Froggy to hold *Smite."
+  },
+  "froggy:MILF": {
+    "NAME": "Man, I Love Frogs!",
+    "DESCRIPTION": "Summon !M! froggy:Froggies."
+  },
+  "froggy:FroggyChair": {
+    "NAME": "Froggy Chair",
+    "DESCRIPTION": "Reduce the turn count for all froggy:Froggies by !M!."
   }
 }

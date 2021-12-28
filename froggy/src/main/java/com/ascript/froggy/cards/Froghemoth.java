@@ -7,12 +7,11 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class Froghemoth extends AbstractDynamicCard {
     public static final String ID = FroggyMod.makeID(Froghemoth.class.getSimpleName());
-    public static final String IMG = FroggyMod.makeCardPath("Attack.png");
+    public static final String IMG = FroggyMod.makeCardPath("Froghemoth.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

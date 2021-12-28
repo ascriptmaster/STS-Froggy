@@ -2,7 +2,10 @@ package com.ascript.froggy.cards.mods;
 
 import basemod.abstracts.AbstractCardModifier;
 import basemod.interfaces.XCostModifier;
+import com.ascript.froggy.powers.SuspendPower;
+import com.ascript.froggy.util.MinionUtils;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 // Thanks to Jobby for the code
 public class SetXMod extends AbstractCardModifier implements XCostModifier {
@@ -19,6 +22,16 @@ public class SetXMod extends AbstractCardModifier implements XCostModifier {
     }
 
     public boolean removeOnCardPlayed(AbstractCard c) {
+        return true;
+    }
+
+    @Override
+    public boolean removeAtEndOfTurn(AbstractCard c) {
+        for (AbstractMonster m : MinionUtils.playerMinions().monsters) {
+            if (m.hasPower(SuspendPower.POWER_ID) && ((SuspendPower)m.getPower(SuspendPower.POWER_ID)).card.equals(c)) {
+                return false;
+            }
+        }
         return true;
     }
 
